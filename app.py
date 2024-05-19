@@ -6,8 +6,7 @@ app = Flask(__name__)
 clfModel = joblib.load('model.pkl')
 vectorizer = joblib.load('vectorizer.pkl')
 
-
-@app.route("/", methods=['POST'])
+@app.route("/")
 def predictCat():
     data = request.get_json()
     text=data['text']
@@ -16,5 +15,5 @@ def predictCat():
     res=list(pred)
     return jsonify(res)
 
-# if __name__ == '__main__':
-#     app.run()
+if __name__ == '__main__':
+    app.run()
