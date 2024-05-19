@@ -27,6 +27,6 @@ Result: [
 ]
 ```
 
-OUTPUT
+Example:
 
 ![alt text](image.png)
