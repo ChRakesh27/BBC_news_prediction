@@ -9,7 +9,24 @@ pip install -r requirements.txt
 to run python server local
 
 ```bash
-py
+py app.py
 ```
 
-open <b>bbc.ipynb</b> file
+the server has one endpoint to predict the BBC news category.
+
+```
+Method: POST
+URL:http://127.0.0.1:5000/
+
+body: {
+    "text": ["statement1", "statement2"]
+}
+
+Result: [
+    "business"
+]
+```
+
+OUTPUT
+
+![alt text](image.png)
