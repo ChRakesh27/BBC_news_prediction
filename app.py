@@ -3,8 +3,8 @@ import joblib
 
 app = Flask(__name__)
 
-clfModel = joblib.load('model.pkl')
-vectorizer = joblib.load('vectorizer.pkl')
+clfModel = joblib.load('./model/pkl/model.pkl')
+vectorizer = joblib.load('./model/pkl/vectorizer.pkl')
 
 @app.route("/", methods=['POST'])
 def predictCat():
